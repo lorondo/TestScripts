@@ -5,7 +5,7 @@ This Python script prompts the user to input two numbers, adds them together, an
 
 ---
 
-## 📝 How It Works  
+## How It Works  
 1. Prompts the user to enter two numbers.  
 2. Converts the input into integers and stores them in variables.  
 3. Adds the two numbers together.  
