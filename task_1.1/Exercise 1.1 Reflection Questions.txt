@@ -1,0 +1,20 @@
+Exercise 1.1: Getting Started with Python
+ 
+Reflection Questions
+ 
+In your own words, what is the difference between frontend and backend web development? If you were hired to work on backend programming for a web application, what kinds of operations would you be working on?
+
+a-Front-end development focusses on what the user sees and interacts with. Back-end handles data processing and server-side logic.
+b-For back-end, I would be hired to work on things like database management, authentication/security, and API development.
+ 
+Imagine you’re working as a full-stack developer in the near future. Your team is asking for your advice on whether to use JavaScript or Python for a project, and you think Python would be the better choice. How would you explain the similarities and differences between the two languages to your team? Drawing from what you learned in this Exercise, what reasons would you give to convince your team that Python is the better option?
+
+a-A similarity is that they are both dynamically typed. Some differences include that Python is primarily for backend, it uses simple and readable syntax, and is opetmized for complex computations, though admittedly is slower than JS in performance.
+b-Reasons to use is? It has better readability and more versatility, and has functionality for handling backend operations.
+(Hint: refer to the Exercise section “The Benefits of Developing with Python”)
+ 
+Now that you’ve had an introduction to Python, write down 3 goals you have for yourself and your learning during this Achievement. You can reflect on the following questions if it helps you. What do you want to learn about Python? What do you want to get out of this Achievement? Where or what do you see yourself working on after you complete this Achievement?
+
+1-I’m hoping to gain a degree of competency in Python and its syntax, data structures, and functions.
+2-I want to be able to understand this language on a useable level, not merely an academic one.
+3-I would love to implement what I learn here in my own personal programs and games to help better flesh out my portfolio and get a job as a developer.
