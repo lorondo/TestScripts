@@ -40,3 +40,8 @@ b = second_number
 c = a + b
 
 print("Those two numbers added together are: ", c)
+
+# Lesson Task 1.2 - Recipe Collection
+For each recipe, I used a dictionary data structure. I chose this structure because the recipe layout fits the idea of a key-value pair. One of those key-value pairs can be a list, which works great for ingredients, and it would allow you to update the values in the recipe should you ever need to modify the data within.
+
+I stored these recipes in the list all_recipes because lists are perfect for storing things in an ordered sequence. In addition, a list will still allow for greater flexibility with its contents. 
