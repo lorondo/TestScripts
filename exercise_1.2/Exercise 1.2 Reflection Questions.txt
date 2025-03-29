@@ -1,0 +1,21 @@
+Q1) Imagine you’re having a conversation with a future colleague about whether to use the iPython Shell instead of Python’s default shell. What reasons would you give to explain the benefits of using the iPython Shell over the default one?
+
+A) IPython is a better choice because it has better readability and features that support syntax highlighting, auto-indentation, and better output formatting. It has a smart autocompletion feature for functions, variables, and modules. It has better history management and is better for debugging.
+
+Q2) Python has a host of different data types that allow you to store and organize information. List 4 examples of data types that Python recognizes, briefly define them, and indicate whether they are scalar or non-scalar.
+
+A) 
+Integer, Whole numbers, Scalar.
+Float, Decimal numbers, Scalar
+String, Text, Scalar
+List, Ordered collection of elements, Non-scalar
+
+Q3) A frequent question at job interviews for Python developers is: What is the difference between lists and tuples in Python? Write down how you would respond.
+
+A) Lists are mutable, tuples are immutable, and tuples are faster than lists because they are immutable. You use lists when data needs to change dynamically, and you use tuples when the data should remain constant.
+
+Q4) In the task for this Exercise, you decided what you thought was the most suitable data structure for storing all the information for a recipe. Now, imagine you’re creating a language-learning app that helps users memorize vocabulary through flashcards. Users can input vocabulary words, definitions, and their category (noun, verb, etc.) into the flashcards. They can then quiz themselves by flipping through the flashcards. Think about the necessary data types and what would be the most suitable data structure for this language-learning app. Between tuples, lists, and dictionaries, which would you choose? Think about their respective advantages and limitations, and where flexibility might be useful if you were to continue developing the language-learning app beyond vocabulary memorization.
+
+A) The best structure would be a dictionary. You can store words, definitions, and categories as key-value pairs. This will allow faster lookup speed and more flexibility to add, remove, or modify words. Lastly, you can organize this best by nesting dictionaries. Looking at other options, tuples are not a good choice because data needs to be updated, and lists could work, but they would be slower than a dictionary.
+
+
