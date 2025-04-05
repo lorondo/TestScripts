@@ -1,0 +1,19 @@
+Why is file storage important when you’re using Python? What would happen if you didn’t store local files?
+
+A: It is vital in order to preserve data even after the program is closed. If it wasn’t stored, you’d be starting over from scratch every time you used a program.
+ 
+In this Exercise, you learned about the pickling process with the pickle.dump() method. What are pickles? In which situations would you choose to use pickles and why?
+
+A: A stream of packaged bytes. You would use them when storing large amounts of complex information to be referenced later.
+
+In Python, what function do you use to find out which directory you’re currently in? What if you wanted to change your current working directory?
+
+A: os.getcwd() is used to find out which directory you’re in, and os.chdir() lets youchange your current working directory. 
+ 
+Imagine you’re working on a Python script and are worried there may be an error in a block of code. How would you approach the situation to prevent the entire script from terminating due to an error?
+
+A: You can use try-except blocks to close the code if it doesn’t work as you’d like.
+ 
+You’re now more than halfway through Achievement 1! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? Feel free to use these notes to guide your next mentor call.
+
+A: It’s going fairly well. Most of the material is pretty understandable. It’s a great introduction to the material, and I think I'll solidify these tools without issue with some more repetition and project work. Based on this section, I could probably use more practice at the try-except blocks; they can be a little tricky to implement.
