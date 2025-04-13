@@ -1,0 +1,18 @@
+Reflection Questions 1.5
+ 
+In your own words, what is object-oriented programming? What are the benefits of OOP?
+This is a coding that focuses on building objects and organizing them with classes and that follows the DRY principles to help keep code non-redundant and efficient.
+
+What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+A class is like a blueprint for creating objects. It defines what attributes (data) and methods (functions) an object will have. An object is a specific instance of a class.
+A class is like a recipe book (it tells you how to make things), and each object is a recipe created from the book.
+ 
+In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine.
+ 
+Inheritance
+Inheritance is when properties or methods of a class could be useful to another class, and Python lets you inherit methods from one class to another.. The class being inherited from is called the base class, and the class that inherits is called the child class.
+Polymorphism
+ It allows different classes to define methods with the same name but with behavior specific to each class. Makes code more flexible and easier to work with, especially when writing functions that can operate on different types of objects.
+Operator Overloading
+It allows you to define/change the behavior of standard operators when they are used with objects of a user-defined class. Python uses special methods like __add__(), __sub__() etc, and decides what the operator should do.
+
