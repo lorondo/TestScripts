@@ -80,29 +80,29 @@ def main_menu(conn, cursor):
     try:
         selected_index = int(input("Pick an ingredient by number: ")) - 1
         if 0 <= selected_index < len(all_ingredients):
-          search_ingredient = all_ingredients[selected_index]
-          print(f"You chose: {search_ingredient}")
+            search_ingredient = all_ingredients[selected_index]
+            print(f"You chose: {search_ingredient}")
 
-          # 5. Search database for recipes with that ingredient
-          sql = "SELECT name, ingredients, cooking_time, difficulty FROM Recipes WHERE ingredients LIKE %s"
-          val = f"%{search_ingredient}%"
-          cursor.execute(sql, (val,))
-          matching_recipes = cursor.fetchall()
+            # 5. Search database for recipes with that ingredient
+            sql = "SELECT name, ingredients, cooking_time, difficulty FROM Recipes WHERE ingredients LIKE %s"
+            val = f"%{search_ingredient}%"
+            cursor.execute(sql, (val,))
+            matching_recipes = cursor.fetchall()
 
-          if matching_recipes:
-            print("\nMatching Recipes:")
-            for recipe in matching_recipes:
-              print(f"Name: {recipe[0]}")
-              print(f"Ingredients: {recipe[1]}")
-              print(f"Cooking Time: {recipe[2]} minutes")
-              print(f"Difficulty: {recipe[3]}\n")
+            if matching_recipes:
+                print("\nMatching Recipes:")
+                for recipe in matching_recipes:
+                    print(f"Name: {recipe[0]}")
+                    print(f"Ingredients: {recipe[1]}")
+                    print(f"Cooking Time: {recipe[2]} minutes")
+                    print(f"Difficulty: {recipe[3]}\n")
 
-          else:
-            print("No recipes found with that ingredient.")
+            else:
+                print("No recipes found with that ingredient.")
         
         else:
-          print("That number is out of range.")  
-      except ValueError:
+            print("That number is out of range.")  
+    except ValueError:
         print("Please enter a valid number.")
 
   # Definition for updating a recipe
