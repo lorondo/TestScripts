@@ -1,0 +1,22 @@
+What are databases and what are the advantages of using them?
+Databases are tools for storing and organizing data collections. They store data in a standardized format, making it easier to be stored and accessed.
+ 
+List 3 data types that can be used in MySQL and describe them briefly:
+Data type
+Definition
+ VARCHAR(n)
+A string of variable length, n represents the maximum number of characters 
+ INT
+ Standard integers
+ FLOAT
+ Floating-point decimal numbers
+
+ 
+ In what situations would SQLite be a better choice than MySQL?
+When you’re working with very simple databases or just testing a database without setting up an entire database engine.
+
+Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+The syntax feels a bit more literal at times, and it is easier to follow the logic in the code.
+ 
+Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+Slower than JavaScript and doesn’t seem to be used a lot in Android/iOS app development, and doesn’t run in browsers.
