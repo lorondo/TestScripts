@@ -86,7 +86,7 @@ def create_recipe():
   ingredients = []
   while True:
     try:
-      num_ingredients = int(input("How many ingredients are in this recipe?"))
+      num_ingredients = int(input("How many ingredients are in this recipe? "))
       break
     except ValueError:
        print("Please enter a valid number.")
@@ -267,7 +267,7 @@ def delete_recipe():
      print("Recipe not found.")
      return
 
-  user_permission = input("Are you sure you want to delete this recipe? (Yes or No)")
+  user_permission = input("Are you sure you want to delete this recipe? (Yes or No) ")
   if user_permission.strip().lower() == "yes":
      session.delete(recipe_to_delete)
      session.commit()
