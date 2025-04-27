@@ -1,0 +1,21 @@
+Exercise 2.1
+Django is popular because of its rapid development capabilities, security features, and scalability. It provides developers the essential tools out of the box, allowing them to focus on building apps rather than reinventing functionalities. It's DRY principles promotes clean code, making it a great choice for startups and large companies.
+
+Five companies using Django:
+-Instagram: Uses it to handle its massive user base
+-Spotify: Uses it for backend services, like user authentication workflows
+-Pinterest: Uses it to manage its complex application structure
+-Mozilla: Uses it to build some of its web applications
+-NASA: Uses it to develop web applications to handle research and data-sharing  
+
+Should you use Django?
+-You need to develop a web application with multiple users.
+Yes. Django has great scalability.
+-You need fast deployment and the ability to make changes as you proceed.
+Yes. Django has features that support rapid deployment.
+-You need to build a very basic application, which doesn’t require any database access or file operations.
+No. Django is not recommended for basic applications.
+-You want to build an application from scratch and want a lot of control over how it works.
+No. Django is complete package and you must follow its rules to get the most out of it.
+-You’re about to start working on a big project and are afraid of getting stuck and needing additional support.
+Yes. Django is great for large projects and has support features.
