@@ -1,0 +1,16 @@
+2.1 Reflection Questions
+ 
+Suppose you’re a web developer in a company and need to decide if you’ll use vanilla (plain) Python for a project, or a framework like Django instead. What are the advantages and drawbacks of each?
+Easy to use and powerful. Fast development and processing. Uses DRY principles. 
+Drawbacks include a rigid structure and that its really only suitable for small or static sites.
+
+In your own words, what is the most significant advantage of Model View Template (MVT) architecture over Model View Controller (MVC) architecture?
+In Django you don’t write controller code, the framework handles control flow, making it faster and easier to use than MVC.
+ 
+Now that you’ve had an introduction to the Django framework, write down three goals you have for yourself and your learning process during this Achievement. You can reflect on the following questions if it helps:
+●     What do you want to learn about Django?
+How to implement more backend functionality.
+●     What do you want to get out of this Achievement?
+I want to be able to create more complex applications.
+●     Where or what do you see yourself working on after you complete this Achievement?
+Wouldn’t mind honing my skills more by dipping my toes into py games and implementing both Python and Django in its development.
