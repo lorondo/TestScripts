@@ -1,0 +1,11 @@
+2.2 Reflection Questions
+ 
+Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference.
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+The whole website would be the project. The apps would be individual modules, like login, FAQ, Calendar, and so on, with each having a particular purpose.
+ 
+In your own words, describe the steps you would take to deploy a basic Django application locally on your system.
+Need to activate your virtual environment, then create your project, then run migrations, and then run the server to deploy your application to localhost.
+ 
+Do some research about the Django admin site and write down how you’d use it during your web application development.
+It allows you to manage your database records (add, edit, and delete), you get a ready-to-use interface to save on development time, you can create and manage test data, monitor data changes, and manage user accounts.
