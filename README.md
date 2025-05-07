@@ -45,3 +45,6 @@ print("Those two numbers added together are: ", c)```
 For each recipe, I used a dictionary data structure. I chose this structure because the recipe layout fits the idea of a key-value pair. One of those key-value pairs can be a list, which works great for ingredients, and it would allow you to update the values in the recipe should you ever need to modify the data within.
 
 I stored these recipes in the list all_recipes because lists are perfect for storing things in an ordered sequence. In addition, a list will still allow for greater flexibility with its contents. 
+
+# Lesson Task 2.3 - Recipe Application
+This Django-based Recipe application allows users to create and manage a collection of recipes. Each recipe includes key information such as the name, list of ingredients, cooking time, and a difficulty level. The difficulty levels are categorized as Easy, Medium, Intermediate, and Hard.
