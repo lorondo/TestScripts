@@ -1,0 +1,11 @@
+Task-2.5
+I didn't see much of a reason to alter much that was already established. The only thing I went in and added to give a little more for the recipes was the include a pics section so that I could display what a finished product may look like of a given recipe. 
+
+Frontend Inspirations
+https://www.simplyrecipes.com/
+https://www.foodnetwork.com/recipes
+https://www.food.com/
+
+I liked the blocking of these sites, how everything is compartmentalized, as well as the minimalist approach to their design. I wanted to incorporate a navbar on my own as well as a backdrop image that would guide the visitor to the next page where the recipes are listed.
+
+

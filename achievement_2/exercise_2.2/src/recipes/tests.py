@@ -1,8 +1,10 @@
 from django.test import TestCase
 from .models import Recipe
+
 # Create your tests here.
 class RecipeModelTest(TestCase):
-  def setUpTestData():
+  @classmethod
+  def setUpTestData(cls):
     Recipe.objects.create(
       name='Top Ramen', 
       ingredients='Top ramen packet, boiling water', 
@@ -24,3 +26,7 @@ class RecipeModelTest(TestCase):
       ('hard', 'Hard'),
     )
     self.assertEqual(field.choices, expected_choices)
+  
+  def test_get_absolute_url(self):
+    recipe = Recipe.objects.get(recipe_id=1)
+    self.assertEqual(recipe.get_absolute_url(), '/recipes/list/1')
