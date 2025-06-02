@@ -1,10 +1,12 @@
 from django.test import TestCase
 from .models import Recipe
+from django.contrib.auth.models import User
 
 # Create your tests here.
 class RecipeModelTest(TestCase):
   @classmethod
   def setUpTestData(cls):
+    cls.user = User.objects.create_user(username='testuser', password='testpass123')
     Recipe.objects.create(
       name='Top Ramen', 
       ingredients='Top ramen packet, boiling water', 
@@ -30,3 +32,35 @@ class RecipeModelTest(TestCase):
   def test_get_absolute_url(self):
     recipe = Recipe.objects.get(recipe_id=1)
     self.assertEqual(recipe.get_absolute_url(), '/recipes/list/1')
+  
+  #test ingredient search
+  def test_ingredient_search_post_with_match(self):
+    self.client.login(username='testuser', password='testpass123')
+    Recipe.objects.create(
+      name='Spaghetti', ingredients='pasta, tomato sauce', cooking_time=15, difficulty='easy'
+    )
+    response = self.client.post('/recipes/search/', {
+      'ingredient_name': 'pasta',
+      'chart_type': '#1'
+    })
+    self.assertEqual(response.status_code, 200)
+    self.assertContains(response, 'Spaghetti')
+    self.assertIn('ingredients_df', response.context)
+    self.assertIn('chart', response.context)
+  
+  #test if unauthenticated users are redirected 
+  def test_redirect_if_not_logged_in(self):
+    response = self.client.get('/recipes/search/')
+    self.assertRedirects(response, '/login/?next=/recipes/search/')
+
+  #test get_chart
+  def test_get_chart_bar_chart(self):
+    from .utils import get_chart
+    import pandas as pd
+
+    data = pd.DataFrame({
+      'category': ['Total', 'Matched'],
+      'count': [10, 5]
+    })
+    chart = get_chart('#1', data)
+    self.assertTrue(chart.startswith('iVBOR'))

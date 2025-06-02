@@ -1,0 +1,5 @@
+Task-2.7
+I want to keep it somewhat simple and allow the user to search for an ingredient and see the recipes in our database that utilize this ingredient. Kind of like a last minute meal search when you're prepping for a meal and going off of the things you just happen to have in your kitchen.
+
+Data Analysis
+The charts will see how many recipes are in the database vs the number of recipes in the database that utilize the searched ingredient. The x-axis is the number of recipes and the y-axis is the ingredient searched.

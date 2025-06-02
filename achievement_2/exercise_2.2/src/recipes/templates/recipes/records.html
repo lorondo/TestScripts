@@ -1,0 +1,19 @@
+<h1> Search for recipes by ingredient</h1>
+<a href ="{%url 'recipes_home' %}"> Home Page </a>
+<br>
+<a href ="{%url 'ingredient_search' %}"> Search Recipe By Ingredient </a>
+<hr>
+<form action="" method="POST">
+   {% csrf_token %}
+   {{form}}
+   <button type="submit" >search</button>
+</form>
+
+
+{% if ingredients_df %}
+   {{ingredients_df|safe}}
+   <br>
+   <img src="data:image/png;base64, {{chart|safe}}"> 
+{% else %}
+   <h3> no data</h3>
+{% endif %}
