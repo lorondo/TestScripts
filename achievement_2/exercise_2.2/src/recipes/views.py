@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 from .models import Recipe
 #to protect class-based view
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -96,3 +96,6 @@ class RecipeListView(LoginRequiredMixin, ListView):
 class RecipeDetailView(LoginRequiredMixin, DetailView):
     model = Recipe
     template_name = 'recipes/detail.html'
+
+class AboutView(LoginRequiredMixin, TemplateView):
+    template_name = 'recipes/about_me.html'

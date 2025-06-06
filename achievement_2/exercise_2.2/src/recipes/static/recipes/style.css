@@ -283,3 +283,41 @@ form select, form input[type="text"], form textarea {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+/* About page specific styles */
+
+.about-me-detail {
+    background-color: var(--background-light, #f9f9f9);
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-primary, #333);
+    margin-bottom: 1.5rem;
+}
+
+.about-me-info {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.about-me-info a {
+    color: var(--link-color, #007acc);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-me-info a:hover,
+.about-me-info a:focus {
+    color: var(--link-hover-color, #004a99);
+    text-decoration: underline;
+}
