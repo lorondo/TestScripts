@@ -9,4 +9,5 @@ urlpatterns = [
    path('list/<pk>', RecipeDetailView.as_view(), name='detail'),
    path('search/', views.ingredient_search, name='ingredient_search'),
    path('about/', AboutView.as_view(), name='about_me'),
+   path('add/', views.add_recipe_view, name='add_recipe'),
 ]

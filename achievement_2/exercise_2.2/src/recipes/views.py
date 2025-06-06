@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import ListView, DetailView, TemplateView
 from .models import Recipe
 #to protect class-based view
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
-from .forms import IngredientsSearchForm
+from .forms import IngredientsSearchForm, RecipeForm
 import pandas as pd
 from .utils import get_chart
 
@@ -86,6 +86,18 @@ def ingredient_search(request):
     }
 
     return render(request, 'recipes/records.html', context)
+
+@login_required
+def add_recipe_view(request):
+    if request.method == 'POST':
+        form = RecipeForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('recipe_list')
+    else: 
+        form = RecipeForm()
+        
+    return render(request, 'recipes/add_recipe.html', {'form': form})
 
 # Create your views here.
 
