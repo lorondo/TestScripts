@@ -38,7 +38,7 @@ def ingredient_search(request):
         if matched_recipes > 0: #if data found
             df = pd.DataFrame(qs.values('recipe_id', 'name', 'ingredients', 'cooking_time', 'difficulty'))
             df['name'] = df.apply(
-                lambda row: f'<a href="/recipes/list/{row["recipe_id"]}">{row["name"]}</a>',
+                lambda row: f'<a href="/list/{row["recipe_id"]}">{row["name"]}</a>',
                 axis=1
             )
 
